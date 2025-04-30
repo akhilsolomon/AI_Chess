@@ -11,7 +11,6 @@ def evaluate(board):
     return score
 
 def minimax(board, depth, maximizing):
-    visualize_board(board, depth) 
     if depth == 0 or board.is_game_over():
         return evaluate(board), None
 
